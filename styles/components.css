@@ -1,0 +1,32 @@
+@keyframes flash {
+    10%{opacity: 100%;}
+    20%{opacity: 0%}
+    21%{opacity: 100%}
+    22%{opacity: 0%}
+    23%{opacity: 100%}
+
+    77%{opacity: 100%;}
+    88%{opacity: 0%}
+    89%{opacity: 100%}
+    90%{opacity: 0%}
+    91%{opacity: 100%}
+}
+
+@keyframes pulse {
+    from {scale: 1}
+    to {scale: 1.1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;filter: blur(2px)}
+    to{opacity: 1;filter: blur(0);}
+}
+@keyframes fadeOut {
+    from {opacity: 1; filter: blur(0);}
+    to{opacity: 0; filter: blur(5px);}
+}
+@keyframes chapuza {
+    0% {opacity: 0%;}
+    99% {opacity: 0%;}
+    100%{opacity: 100%;}
+}

@@ -1,0 +1,565 @@
+@import url(base.css);
+@import url(layout.css);
+@import url(themes.css);
+@import url(components.css);
+
+/*-------------------------------------- mobile first -------------------------------------------*/
+@media screen and (max-width: 450px){
+/*-------------------------------------- CONTENEDOR GRID -------------------------------------------*/
+.grid__container {
+    background-color: var(--fondo);
+    gap: 2px;
+}
+.grid--item {
+    border: 1px, solid var(--verdecl);
+    border-radius: 4px;
+    background-image: var(--fondotarjetas);
+}
+/*-------------------------------------- Tarjetas titulo -------------------------------------------*/
+.titulodc1 {
+    color: var(--blanco); 
+    text-shadow: 1px 2px 3px var(--verdecl);
+    background-image: var(--fondotitulo1);
+    background-size: cover;
+    z-index: 0;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    border-radius: 20px 20px 0 0;
+    transition: all ease 0.8s;
+    will-change: opacity;
+}
+.titulodc1 h1 {
+    position: absolute;
+    top: 5.5rem;
+    font-size: 1.7rem;
+}
+
+.titulodc2 {
+    color: var(--negro);
+    background-image: linear-gradient(var(--naranjacl), var(--verdecl));
+    background-size: cover;
+    text-shadow: 1px 1px 7px var(--negro);
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    border-radius: 20px 20px 0 0;
+    max-height: 250px;
+}
+
+.titulodc2 h2 {
+    font-size: 1.7rem;
+}
+
+/*-------------------------------------- dinamic grid -------------------------------------------*/
+.dynamicgrid__container {
+    background-color: transparent;
+}
+/*-------------------------------------- home -------------------------------------------*/
+.dynamic__home{
+    background-color: transparent;
+    gap: 2px;
+    font-size: 11px;
+}
+.about--card, .imgcontainer {
+    border-radius: 50%;
+    margin: 5px;
+}
+.about--card img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about--card, .about--card img, .imgcontainer {
+    shape-outside: circle();
+    clip-path: circle();
+    aspect-ratio: 1/1;
+    z-index: 20;
+}
+
+.about--card p {
+    color: var(--negro);
+    box-shadow: 1px 1px 5px var(--negro);
+    border: 1px solid var(--negro);
+    padding: 2px;
+    border-radius: 4px;
+    animation: flash 7s ease infinite alternate;
+    transition: 0.4s all ease;
+    will-change: position, filter, opacity;
+}
+
+.iconcard {
+    margin: 0.8rem;
+    font-size: 3rem;
+}
+.projects--card {
+    color: var(--texto);
+    padding-bottom: 5rem;
+    padding-top: 15rem;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 1px var(--naranjacl);
+}
+.skills--card {
+    color: var(--texto);
+    padding-bottom: 5rem;
+    padding-top: 15rem;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 1px var(--naranjacl);
+}
+/*-------------------------------------- about -------------------------------------------*/
+
+.about{
+    background-image: var(--fondocajas);
+    color: var(--texto);
+    white-space: pre-wrap;
+    padding: 0.5em;
+
+}
+/*-------------------------------------- projects -------------------------------------------*/
+
+.projects{
+    background-image: var(--fondocajas);
+}
+
+.acblock /*item*/{
+    border: 1px solid var(--naranjacl);
+    box-shadow: 1px 1px 10px var(--negro);
+    color: var(--texto);
+}
+/*-------------------------------------- skills -------------------------------------------*/
+
+.skills{
+    background-image: var(--fondocajas)
+}
+.skill--item{
+    color: var(--texto);
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    box-shadow: 0 1px 50px 0px var(--negro);
+    font-size: 0.9rem;
+}
+.skill--item h2 {
+    margin-bottom: 1rem;
+}
+.skill--item i {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 5px var(--negro);
+}
+/*-------------------------------------- extraxp -------------------------------------------*/
+
+.mobile__flexcontainer {
+    background-image: var(--fondocajas);
+    border: 1px solid var(--verdecl);
+    border-radius: 4px;
+}
+.mobile--extraexp{
+    margin: 0;
+    margin-top: 5px;
+    border: 1px solid var(--texto);
+    color: var(--texto);
+    justify-content: center;
+    justify-items: center;
+}
+.titulo-eex{
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 1px var(--naranjacl);
+}
+.exx--item h2 {
+    font-size: 1rem;;
+    margin-top: 5px;
+}
+.exx--item p {
+    font-size: 0.8rem;
+    white-space: pre-wrap;
+    margin-bottom: 1rem;
+}
+.exx--item {
+    padding-top: 10px;
+    margin: 2px;
+    border-top: 1px solid var(--verdecl);
+    border-left: 1px solid var(--verdecl);
+    align-items: center;
+    text-align: center;
+}
+.iconex {
+    font-size: 2rem;
+}
+.mobile--contact {
+    margin: 5px;
+    border: 1px solid var(--blanco);
+}
+
+
+.mobile--contact h2 {
+    color: var(--texto);
+    margin: 3rem;
+    text-shadow: 1px 1px 5px var(--naranjacl);
+}
+
+.redescontainer {
+    color: var(--texto);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.redicon {
+    list-style: none;
+    text-shadow: 1px 1px 5px var(--verdecl);
+    transition: 0.2s ease-in
+}
+.redicon:hover {
+    color: var(--textohover);
+    transform:scale(1.2)
+}
+
+.mobie__footercontainer {
+    border-top: 1px solid var(--blanco);
+}
+.trap {
+    background-color: transparent;}
+}
+
+
+
+
+
+
+
+/*-------------------------------------- desktop version -------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 450px){
+/*-------------------------------------- CONTENEDOR GRID -------------------------------------------*/
+.grid__container {
+    background-color: var(--fondo);
+    padding: 5px;
+    gap: 2px;
+    position: absolute;
+    top: 8px;
+}
+
+.grid--item {
+    border: 1px, solid var(--verdecl);
+    border-radius: 4px;
+    background-image: var(--fondotarjetas);
+}
+/*-------------------------------------- Tarjetas titulo -------------------------------------------*/
+.titulodc1 {
+    color: var(--blanco); 
+    text-shadow: 1px 2px 3px var(--verdecl);
+    background-image: var(--fondotitulo1);
+    background-size: cover;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    border-radius: 20px 20px 4px 4px;
+
+}
+.titulodc1 h1 {
+    position: relative;
+    font-size: 1.7rem;
+    align-self: flex-start;
+    top: 6rem;
+}
+
+.titulodc2 {
+    color: var(--blanco);
+    background-image: linear-gradient(var(--naranjacl), var(--verdecl));
+    background-size: cover;
+    text-shadow: 1px 1px 7px var(--negro);
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    border-radius: 20px 20px 0 0;
+    transition: 0.8s;
+}
+
+.titulodc2 h2 {
+    font-size: 1.7rem;
+}
+.buttons--box {
+    /* border-radius: 8px; */
+    border-radius: 60% 40% 60% 5%;
+    box-shadow: 5px 0px 50px 1px var(--verdecl);
+}
+.lplogo {
+    border-radius: 8px;
+    background-image: url(/media/images/ogpng.png);
+    background-position: center;
+    background-size: cover;
+    animation: 7s infinite linear alternate flash;
+}
+/*-------------------------------------- dinamic grid -------------------------------------------*/
+.dynamicgrid__container {
+    background-color: transparent;
+}
+/*-------------------------------------- home -------------------------------------------*/
+.dynamic__home{
+    background-color: transparent;
+    gap: 2px;
+    font-size: 11px;
+}
+.about--card, .imgcontainer {
+    border-radius: 50%;
+    margin: 5px;
+    justify-items: center;
+    align-items: center;
+}
+.about--card{
+    max-width: 90%;
+    justify-self: center;
+    align-self: center;
+}
+.about--card img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+}
+.imgcontainer {
+    max-width: 97%;
+}
+.about--card, .about--card img, .imgcontainer {
+    shape-outside: circle();
+    clip-path: circle();
+    aspect-ratio: 1/1;
+    z-index: 10;
+}
+.about--card p {
+    color: var(--negro);
+    box-shadow: 1px 1px 5px var(--negro);
+    border: 1px solid var(--negro);
+    padding: 2px;
+    border-radius: 4px;
+    opacity: 0;
+    filter: blur(5px);
+    animation: 1.01s ease chapuza;
+    transition: 0.4s all ease;
+}
+.about--card:hover p {
+    opacity: 100%;
+    filter: blur(0);
+}
+
+.iconcard {
+    margin: 0.8rem;
+    font-size: 3rem;
+}
+.projects--card, .contact--card, .skills--card, .wame, .extraxp--card {
+    color: var(--texto);
+    font-size: 0.5rem;
+    text-shadow: 1px 1px 1px var(--naranjacl);
+}
+.projects--card{
+    padding-top: 4.5rem;
+    border-radius: 10px 10px 4px 4px;
+    background-image: linear-gradient(var(--verdecl), var(--naranjacl));
+    text-shadow: 1px 1px 2px var(--verdeoss);
+}
+
+/*--------------------------------PROJECTS-------------------------*/
+
+
+.about{
+    color: var(--texto);
+    white-space: pre-wrap;
+    text-justify: newspaper;
+    padding: 4rem;
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+}
+
+
+
+
+/*--------------------------------PROJECTS-------------------------*/
+.dynamic__projects, .dynamic__skills, .dynamic__extraxp{
+    background-image: var(--fondotarjetas);
+    border-radius: 8px 10% 2px 10%;
+}
+.projects, .skills{
+    background-image: var(--fondocajas);
+    border-radius: 8px;
+}
+.acblock /*item*/{
+    border: 1px solid var(--naranjacl);
+    box-shadow: 1px 1px 10px var(--negro);
+    color: var(--texto);
+}
+.acblock h2 {
+text-shadow: 1px 1px 5px var(--negro);
+}
+
+/*--------------------------------skills-------------------------*/
+
+.skills::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0.4rem;
+    max-height: 90%;
+}
+.skills::-webkit-scrollbar-track {
+    border-radius: 8px;
+    margin-top: 3px;
+    margin-bottom: 1px;
+    background-color: #00000055;
+    opacity: 10%;}
+.skills::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    width: 0.3rem;
+    background-color: #fea61355;
+    cursor: pointer;
+    transition: 1s;
+}
+.skills::-webkit-scrollbar-thumb:hover{
+    background-color: var(--naranjacl);}
+.skill--item{
+    color: var(--texto);
+    min-height: calc(100% / 5);
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding-left: 1rem ;
+    padding-right: 1rem;
+    box-shadow: 0 1px 50px 0px var(--negro);
+    font-size: 0.9rem;
+}
+.skill--item h2 {
+        margin-bottom: 1rem;
+}
+.skill--item i {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 5px var(--negro);
+}
+
+
+/*--------------------------------contact-------------------------*/
+
+.grid--contact {
+    background-image: var(--fondocajas);
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+.grid--contact h2 {
+    color: var(--texto);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 5px var(--naranjacl);
+}
+.redescontainer {
+    color: var(--texto);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+    font-size: 3rem;
+}
+.redicon {
+    list-style: none;
+    text-shadow: 1px 1px 5px var(--verdecl);
+    transition: 0.3s ease-in
+}
+.redicon:hover {
+    color: var(--textohover);
+    transform:scale(1.2)
+}
+/*--------------------------------extra experience-------------------------*/
+
+.dynamic__extraxp{
+    margin: 0;
+    color: var(--texto);
+    border: 1px solid var(--verdecl);
+    overflow: hidden;
+
+}
+.titulo-eex{
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 1px var(--naranjacl);
+}
+.exx--item h2 {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.titulo-eex {
+    font-size: 1.4rem;;
+    align-items: center;
+    margin: auto;
+}
+.exx--item p {
+    font-size: 0.8rem;
+    white-space: pre-wrap;
+    margin-bottom: 1rem;
+    align-items: start;
+}
+.exx--item div {
+    margin: 0;
+max-height: 80px;
+}
+.exx--item {
+    margin: 5px;
+    border-top: 1px solid var(--naranjacl);
+    border-left: 1px solid var(--naranjacl);
+    box-shadow: -2px 1px 4px var(--naranjacl);
+    text-align: center;
+}
+.iconex {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.contact--card:hover,
+.wame:hover,
+.skills--card:hover,
+.extraxp--card:hover {
+    cursor: pointer;
+    background-image: radial-gradient(circle at center, var(--verdecl), 1%, var(--base) 90%);
+}
+.projects--card:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to top, var(--verdecl), var(--naranjacl));
+}
+.about--card:hover, .about--card img:hover{
+    cursor: pointer;
+    background-image: linear-gradient(var(--textohover));
+}
+.titulodc2:hover{
+    cursor: pointer;
+    border-radius: 20% 60% 15% 20%;
+    background-image: linear-gradient(to top, var(--naranjacl), var(--verdecl));
+
+}
+}
+
+.wameicon {
+    animation: 1s infinite alternate pulse;
+}
+/*--------------------- hovers ---------------------*/
+
+
+.fadeIn{animation: 0.25s ease-in forwards fadeIn}
+.fadeOut{animation: 0.25s ease-in forwards fadeOut}

@@ -1,0 +1,50 @@
+/* tema oscuro/claro (si querés tenerlo separado) *//*------------------------------------------ COLORES ----------------------------------------*/
+
+.dark {
+/*----------------Tema oscuro-------------*/
+--base: #000000;
+--negro : #000000;
+--blanco: #ffffff;
+--texto: #ffffff;
+--textohover: #ffddaa;
+--fondocajas:linear-gradient( #000000, 75%, #b2c804);
+--fondotarjetas: linear-gradient(#333333, var(--negro));
+--fondo: linear-gradient( #000000, 75%, #073f00);
+
+
+--verdecl: #b2c804;
+--verdeos: #0d7200;
+--verdeoss: #0f4108;
+
+--naranjacl: #fea613;
+--naranjaos: #d3810e;
+--naranjaoss: #a7650a;
+--fondotitulo1: url(../media/images/fondo-negro.png);
+--fondotitulo2: linear-gradient(var(--naranjacl), var(--verdecl));
+--fondocuerpo: url(../media/images/elegante.jpg)
+}
+.light {
+/*----------------Tema claro-------------*/
+--base: #ffc977;
+--negro : #000000;
+--texto: #000000;
+--textohover: #d3810e;
+--blanco: #ffffff;
+--fondo: linear-gradient(#ffddaa, #dddddd);
+--fondocajas:linear-gradient(#dddddd, 75%, #b2c804);
+--fondotarjetas: linear-gradient(#ffd390, #dddddd);
+
+--verdeos2: #226819;
+--verdeos: #297e1e;
+--verdecl: #b2c804;
+
+--naranjaos: #fea613;
+--naranjaoss: #d3810e;
+--naranjacl: #fcbd4d;
+
+--fondotitulo2: linear-gradient(var(--naranjacl), var(--verdecl));
+--fondotitulo1: url(../media/images/fondo-negro.png);
+--fondocuerpo: url(../media/images/elegante.jpg)
+
+
+}

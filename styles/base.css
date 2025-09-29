@@ -1,0 +1,53 @@
+/*---------------------- reset, tipografía, helpers ----------------------*/
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+
+h1, h2, h3 {
+    font-family: titulos;
+}
+
+body{max-width: 100dvw;
+    overflow-x: hidden;
+    background-color: var(--negro);
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-size: contain;
+background-color: var(--base);}
+
+
+main{
+    min-width: 100dvw;
+    min-height: 100dvh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+a, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(../media/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: titulos;
+    src: url(../media/fonts/SUSE_Mono/static/SUSEMono-Regular.ttf);
+}
