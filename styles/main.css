@@ -306,7 +306,7 @@
 }
 .lplogo {
     border-radius: 8px;
-    background-image: url(/media/images/ogpng.png);
+    background-image: url(media/images/ogpng.png);
     background-position: center;
     background-size: cover;
     animation: 7s infinite linear alternate flash;
