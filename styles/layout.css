@@ -320,11 +320,13 @@ body{max-width: 100%}
     justify-items: center;
     margin-top: 3rem;
     padding-top: 1rem;
+    padding-bottom: 1rem;
 
 }
 
 .acordeon /*Contenedor*/{
-    min-height: 32rem;
+    min-height: 55dvh;
+    max-height: 100%;
     width: 95%;
     display: flex;
     flex-flow: column nowrap;
